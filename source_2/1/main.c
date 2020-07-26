@@ -25,10 +25,10 @@ void display(void)
 	glLoadIdentity();
 
 	glBegin(GL_POLYGON);
-	glVertex2f(0.0,5.0);
-	glVertex2f(4.0,-3.0);
-	glVertex2f(-4.0,-3.0);
-	glVertex2f(5.0,2.0);
+	glVertex2f(0.0,1.0);
+	glVertex2f(0.0,-1.0);
+	glVertex2f(1.0,-1.0);
+	glVertex2f(1.0,1.0);
 	glEnd();
 
 	/* Displays frame buffer on screen */

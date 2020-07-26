@@ -17,8 +17,9 @@ void display(void)
 	/* Set foreground colour to white */
 	glColor3f(1.0f,1.0f,1.0f);
 
+	
 	/* Drawing LINES */
-	for(float i=0.0;i<1.0;i=i+0.05)
+	/*for(float i=0.0;i<1.0;i=i+0.05)
 	{
 		glBegin(GL_LINE_LOOP);
 			glVertex2f(i,i);
@@ -26,7 +27,12 @@ void display(void)
 			glVertex2f(-i,-i);
 			glVertex2f(i,-i);
 		glEnd();
-	}
+	}*/
+	glPointSize(5.0);
+	glBegin(GL_POINTS);
+	glVertex2f(0.5,0.5);
+	glVertex2f(0.5,-0.5);
+	glEnd();
 
 	/* Assigning newly created buffer to our window */
 	glutSwapBuffers();
